@@ -1,0 +1,34 @@
+{
+  "name": "tinypng-cli",
+  "version": "0.0.1",
+  "description": "The best way to compress your images at once, using a complete CLI that identifies whether it is a directory with several images, or just one image. Enjoy!",
+  "main": "index.js",
+  "bin": {
+    "tinypng": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PradoGuilherme/tinypng-cli.git"
+  },
+  "keywords": [
+    "tinypng",
+    "compression",
+    "automate",
+    "image",
+    "img",
+    "minifier",
+    "picture",
+    "pressure",
+    "cli"
+  ],
+  "author": {
+    "name": "Guilherme Prado",
+    "email": "guilherme@devprado.com.br",
+    "url": "https://devprado.com.br"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PradoGuilherme/tinypng-cli/issues"
+  },
+  "homepage": "https://github.com/PradoGuilherme/tinypng-cli#readme"
+}
