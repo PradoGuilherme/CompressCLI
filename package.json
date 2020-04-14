@@ -39,6 +39,12 @@
   },
   "homepage": "https://github.com/PradoGuilherme/compressCLI#readme",
   "dependencies": {
-    "colors": "^1.4.0"
-  }
+    "colors": "^1.4.0",
+    "minimist": "^1.2.5",
+    "readline-sync": "^1.4.10"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "devDependencies": {}
 }
