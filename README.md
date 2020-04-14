@@ -46,11 +46,12 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 
 ## 🎉 Contributing
-Fork it
-Create your feature branch (git checkout -b my-new-feature)
-Commit your changes (git commit -am 'Add some feature')
-Push to the branch (git push origin my-new-feature)
-Create new Pull Request
+
+1. Fork the repository
+2. Create a branch with your feature: ```git checkout -b my-feature```
+3. Commit your changes:  ``` git commit -m 'feat: my feature'```
+4. Push to the branch: ```git push origin my-feature```
+5. Create new pull request for this repository.
 
 
 ## 🖤 Thanks
