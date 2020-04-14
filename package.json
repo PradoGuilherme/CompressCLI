@@ -4,13 +4,20 @@
   "description": "The best way to compress your images at once, using a complete CLI that identifies whether it is a directory with several images, or just one image. Enjoy!",
   "main": "index.js",
   "bin": {
-    "tinypng": "./index.js"
+    "ccpres": "./index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PradoGuilherme/compressCLI.git"
   },
   "keywords": [
+    "tool",
+    "compressor",
+    "ccpres",
+    "compress-image",
+    "image-processing",
+    "compress",
+    "tinypng-cli",
     "tinypng",
     "compression",
     "automate",
