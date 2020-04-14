@@ -4,7 +4,7 @@
   "description": "The best way to compress your images at once, using a complete CLI that identifies whether it is a directory with several images, or just one image. Enjoy!",
   "main": "index.js",
   "bin": {
-    "ccpres": "./index.js"
+    "ccpres": "./bin/ccpres.js"
   },
   "repository": {
     "type": "git",
@@ -37,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/PradoGuilherme/compressCLI/issues"
   },
-  "homepage": "https://github.com/PradoGuilherme/compressCLI#readme"
+  "homepage": "https://github.com/PradoGuilherme/compressCLI#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
