@@ -1,19 +1,9 @@
 # CompressCLI
 
-<img src="https://img.shields.io/github/repo-size/PradoGuilherme/CompressCLI" alt="GitHub repo size - CompressCLI">
+[![Downloads](https://img.shields.io/github/repo-size/PradoGuilherme/CompressCLI)](https://github.com/PradoGuilherme/CompressCLI) [![Downloads](https://img.shields.io/bundlephobia/min/@pradoguilherme/compresscli?label=minified%20size)](https://www.npmjs.com/package/@pradoguilherme/compresscli) [![Downloads](https://img.shields.io/github/last-commit/PradoGuilherme/CompressCLI)](https://github.com/PradoGuilherme/CompressCLI) [![Downloads](https://img.shields.io/github/package-json/v/PradoGuilherme/CompressCLI)](https://www.npmjs.com/package/@pradoguilherme/compresscli) [![Downloads](https://img.shields.io/npm/dm/@pradoguilherme/compresscli)](https://www.npmjs.com/package/@pradoguilherme/compresscli) [![Dependencies](https://img.shields.io/david/pradoguilherme/CompressCLI)](https://www.npmjs.com/package/@pradoguilherme/compresscli)
 
-<img src="https://img.shields.io/bundlephobia/min/CompressCLI?label=minified%20size" alt="npm package size - CompressCLI">
-
-<img src="https://img.shields.io/github/last-commit/PradoGuilherme/CompressCLI" alt="last commit - CompressCLI">
-
-<img src="https://img.shields.io/github/package-json/v/PradoGuilherme/CompressCLI" alt="version - CompressCLI">
-
-<img src="https://img.shields.io/github/languages/top/PradoGuilherme/CompressCLI" alt="language - CompressCLI">
-
-<img src="https://img.shields.io/packagecontrol/dd/CompressCLI" alt="npm downloads - CompressCLI">
-
-
-CompressCLI is a tool that use the official [TinyPNG](https://tinypng.com/) service to compress images via CLI with the best quality and the lowest weight preserving full transparency.
+<p align="center">CompressCLI is a tool that use the official [TinyPNG](https://tinypng.com/) service to compress images via CLI with the best quality and the lowest weight preserving full transparency.
+</p>
 
 ## ⚡ Install
 
