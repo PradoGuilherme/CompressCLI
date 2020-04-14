@@ -2,7 +2,7 @@
 
 [![Downloads](https://img.shields.io/github/repo-size/PradoGuilherme/CompressCLI)](https://github.com/PradoGuilherme/CompressCLI) [![Downloads](https://img.shields.io/bundlephobia/min/@pradoguilherme/compresscli?label=minified%20size)](https://www.npmjs.com/package/@pradoguilherme/compresscli) [![Downloads](https://img.shields.io/github/last-commit/PradoGuilherme/CompressCLI)](https://github.com/PradoGuilherme/CompressCLI) [![Downloads](https://img.shields.io/github/package-json/v/PradoGuilherme/CompressCLI)](https://www.npmjs.com/package/@pradoguilherme/compresscli) [![Downloads](https://img.shields.io/npm/dm/@pradoguilherme/compresscli)](https://www.npmjs.com/package/@pradoguilherme/compresscli) [![Dependencies](https://img.shields.io/david/pradoguilherme/CompressCLI)](https://www.npmjs.com/package/@pradoguilherme/compresscli)
 
-<p align="center">CompressCLI is a tool that use the official [TinyPNG](https://tinypng.com/) service to compress images via CLI with the best quality and the lowest weight preserving full transparency.
+<p align="center">CompressCLI is a tool that use the official <a href="https://tinypng.com/">TinyPNG</a> service to compress images via CLI with the best quality and the lowest weight preserving full transparency.
 </p>
 
 <hr>
