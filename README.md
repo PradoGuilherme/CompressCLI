@@ -27,6 +27,7 @@ Usage: ccpres <cmd> [args]
 Commands:
   ccpres list    Show list of images in the folder
   ccpres quota   Show the current quota
+  ccpres help    Show helper
 
 Options:
   --help         Show help
