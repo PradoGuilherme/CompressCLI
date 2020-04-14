@@ -14,7 +14,7 @@
 ```
 npm install -g @pradoguilherme/compresscli
 ```
-in a new future
+or
 ```
 yarn add -g @pradoguilherme/compresscli
 ```
