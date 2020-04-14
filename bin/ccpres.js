@@ -2,9 +2,9 @@
 
 const packageJson = require('../package.json');
 const colors = require('colors');
-const mainCommands = require('../commands/main');
-const { checkKey } = require('../commands/configure');
-const validateCommands = require('../commands/validate');
+const mainCommands = require('../src/commands/main');
+const { checkKey } = require('../src/commands/configure');
+const validateCommands = require('../src/commands/validate');
 const argv = require('minimist')(process.argv.slice(2));
 
 const getCommands = function () {
