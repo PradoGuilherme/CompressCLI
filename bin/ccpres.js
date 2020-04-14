@@ -1,7 +1,30 @@
+'use strict'
+
 const packageJson = require('../package.json');
 const colors = require('colors');
+const mainCommands = require('../commands/main');
+const { checkKey } = require('../commands/configure');
+const validateCommands = require('../commands/validate');
+const argv = require('minimist')(process.argv.slice(2));
 
-const showIntro = () => {
+const getCommands = function () {
+  const objectArray = Object.entries(argv);
+
+  let result = objectArray.map(([key, value]) => {
+    if (key !== '_')
+      argv._.push(key)
+    return {
+      [key]: value
+    }
+  });
+
+  return result;
+}
+
+const commands = getCommands();
+
+(async () => {
+  const showIntro = () => {
     console.log("")
     console.log("  _____                                                           _____   _        _____  ")
     console.log(" / ____|                                                         / ____| | |      |_   _| ")
@@ -13,8 +36,19 @@ const showIntro = () => {
     console.log("                              |_|                                                         ")
     console.log('\n ___________________________________________________________\n'.green)
     console.log('   Version installed:', colors.green(packageJson.version))
-    console.log(`   To configure your key, please run: ${colors.green('ccpres configure')}`)
+    !checkKey() ? console.log(`   To configure your key, please run: ${colors.green('ccpres configure')}`) : null
     console.log(' ___________________________________________________________\n'.green)
-}
+  }
 
-showIntro()
+  if (!commands[0]._.length || commands[0]._[0] === 'version')
+    return showIntro()
+
+  if (!validateCommands.validate(commands[0]._).length)
+    return console.log('\n ERROR: '.bgRed, 'Command not exist!', 'Run', 'ccpress help'.green, 'to check the commands!\n\n')
+  
+  try {
+    await mainCommands[commands[0]._]()
+  } catch (error) {
+    return console.log('\n ERROR '.bgRed, "Please try again! Still not working? Open a issue!\n\n")
+  }
+})()
