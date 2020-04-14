@@ -5,6 +5,8 @@
 <p align="center">CompressCLI is a tool that use the official [TinyPNG](https://tinypng.com/) service to compress images via CLI with the best quality and the lowest weight preserving full transparency.
 </p>
 
+<hr>
+
 ## ⚡ Install
 
 1. For Mac, Linux and Windows:
