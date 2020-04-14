@@ -20,11 +20,11 @@ CompressCLI is a tool that use the official [TinyPNG](https://tinypng.com/) serv
 1. For Mac, Linux and Windows:
 
 ```
-npm install -g CLICompress
+npm install -g @pradoguilherme/compresscli
 ```
 in a new future
 ```
-yarn add -g CLICompress
+yarn add -g @pradoguilherme/compresscli
 ```
 
 ## 🚀 Getting Started
