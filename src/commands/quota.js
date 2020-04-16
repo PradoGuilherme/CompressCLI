@@ -1,5 +1,5 @@
-
 const tinify = require("tinify");
+
 module.exports = () => {
   try {
     const compressionsThisMonth = tinify.compressionCount;

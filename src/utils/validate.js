@@ -1,4 +1,4 @@
-const commands = ['help', 'version', 'configure', 'list', 'quota']
+const commands = ['help', 'version', 'configure', 'list', 'quota', 'compress']
 
 module.exports = {
   validate: (command) => {

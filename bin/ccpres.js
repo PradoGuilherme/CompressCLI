@@ -56,7 +56,7 @@ const commands = getCommands();
     if (checkKey())
       await configureKey()
 
-    await mainCommands[commands[0]._](tinify)
+    await mainCommands[commands[0]._[0]](commands)
   } catch (error) {
     console.log("error", error)
     return console.log(colors.bgRed('\n ERROR '), 'Please try again! Still not working? Open a issue!\n\n')
