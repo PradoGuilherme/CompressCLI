@@ -1,11 +1,12 @@
-'use strict'
+#!/usr/bin/env node
 
 const packageJson = require('../package.json');
 const colors = require('colors');
 const mainCommands = require('../src/commands/main');
-const { checkKey } = require('../src/commands/configure');
+const { checkKey, getKey } = require('../src/utils/checkKey');
 const validateCommands = require('../src/utils/validate');
 const argv = require('minimist')(process.argv.slice(2));
+const tinify = require("tinify");
 
 const getCommands = function () {
   const objectArray = Object.entries(argv);
@@ -19,6 +20,11 @@ const getCommands = function () {
   });
 
   return result;
+}
+
+const configureKey = async () => {
+  const data = JSON.parse(await getKey())
+  tinify.key = data.key;
 }
 
 const commands = getCommands();
@@ -44,11 +50,15 @@ const commands = getCommands();
     return showIntro()
 
   if (!validateCommands.validate(commands[0]._).length)
-    return console.log('\n ERROR: '.bgRed, 'Command not exist!', 'Run', 'ccpress help'.green, 'to check the commands!\n\n')
-  
+    return console.log(colors.bgRed('\n ERROR: '), 'Command not exist!', 'Run', 'ccpress help'.green, 'to check the commands!\n\n')
+
   try {
-    await mainCommands[commands[0]._]()
+    if (checkKey())
+      await configureKey()
+
+    await mainCommands[commands[0]._](tinify)
   } catch (error) {
-    return console.log('\n ERROR '.bgRed, "Please try again! Still not working? Open a issue!\n\n")
+    console.log("error", error)
+    return console.log(colors.bgRed('\n ERROR '), 'Please try again! Still not working? Open a issue!\n\n')
   }
 })()

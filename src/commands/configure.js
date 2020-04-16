@@ -16,10 +16,7 @@ module.exports = {
       });
 
     } catch (error) {
-      return console.log('\n ERROR '.bgRed, error.message, "\n")
+      return console.log('\n ERROR '.bgRed, "" + error.message + "", "", "\n")
     }
-  },
-  checkKey: () => {
-    return fs.existsSync('./.configure.json')
   }
 }
