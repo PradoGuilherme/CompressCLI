@@ -1,6 +1,6 @@
 {
   "name": "@pradoguilherme/compresscli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The best way to compress your images at once, using a complete CLI that identifies whether it is a directory with several images, or just one image. Enjoy!",
   "main": "index.js",
   "bin": {
