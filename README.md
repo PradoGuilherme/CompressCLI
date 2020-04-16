@@ -25,12 +25,14 @@ yarn add -g @pradoguilherme/compresscli
 Usage: ccpres <cmd> [args]
 
 Commands:
-  ccpres list    Show list of images in the folder
-  ccpres quota   Show the current quota
-  ccpres help    Show helper
+  ccpres list        Show list of images in the folder
+  ccpres compress    Compress the image and save in the same folder but with a prefix on the filename
+  ccpres quota       Show the current quota
+  ccpres help        Show helper
 
 Options:
   --help         Show help
+  -f             The filename with the entire directory
 ```
 
 ## 📝 License
