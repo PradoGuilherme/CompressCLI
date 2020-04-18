@@ -41,6 +41,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "minimist": "^1.2.5",
+    "ora": "^4.0.3",
     "readline-sync": "^1.4.10",
     "tinify": "^1.6.0-beta.2"
   },
