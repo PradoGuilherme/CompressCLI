@@ -23,7 +23,9 @@ const getCommands = function () {
 }
 
 const configureKey = async () => {
-  const data = JSON.parse(await getKey())
+  let data = await getKey()
+  if (data)
+    data = JSON.parse(data)
   tinify.key = data.key;
 }
 
