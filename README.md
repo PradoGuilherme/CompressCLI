@@ -29,9 +29,11 @@ Commands:
   ccpres compress    Compress the image and save in the same folder but with a prefix on the filename
   ccpres quota       Show the current quota
   ccpres help        Show helper
+  ccpres version     Show version
 
 Options:
   --help         Show help
+  --version      Show version
   -f             The filename with the entire directory
   -d             The directory path with the files
 ```
