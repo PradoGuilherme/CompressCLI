@@ -7,8 +7,5 @@ module.exports = {
     help: helpCommand,
     configure: configureCommand.configure,
     quota: quotaCommand,
-    compress: compressCommand,
-    list: function () {
-        console.log('list')
-    }
+    compress: compressCommand
 }
