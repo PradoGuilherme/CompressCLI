@@ -5,6 +5,8 @@ const spinner = require('ora')('Loading...')
 
 module.exports = async (env) => {
   try {
+    if (!tinify._key)
+      throw new Error('Please configure your Tinify key!')
     spinner.text = 'Loading...'
     spinner.start()
     if (env && env.length && env[1] && env[1].d) {
@@ -38,6 +40,7 @@ module.exports = async (env) => {
     console.log('')
     return console.log(' SUCCESS '.bgGreen, 'Saved on ' + newPath, "\n")
   } catch (error) {
+    spinner.stop()
     console.log('')
     return console.log(' ERROR '.bgRed, "" + error.message + "", "", "\n")
   }
