@@ -10,4 +10,5 @@ module.exports = () => {
     console.log('Options:'.gray)
     console.log('  --help         Show helper')
     console.log('  -f             The filename with the entire directory')
+    console.log('  -d             The directory path with the files')
 }

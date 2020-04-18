@@ -33,6 +33,7 @@ Commands:
 Options:
   --help         Show help
   -f             The filename with the entire directory
+  -d             The directory path with the files
 ```
 
 ## 📝 License
