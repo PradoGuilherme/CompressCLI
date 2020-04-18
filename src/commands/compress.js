@@ -1,10 +1,11 @@
 const tinify = require("tinify");
 const path = require("path");
 const fs = require('fs');
-const spinner = require('ora')('Loading...').start();
+const spinner = require('ora')('Loading...')
 
 module.exports = async (env) => {
   try {
+    spinner.text = 'Loading...'
     spinner.start()
     if (env && env.length && env[1] && env[1].d) {
       await checkFolderAndCompressFile(env);
