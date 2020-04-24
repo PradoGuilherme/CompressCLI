@@ -10,7 +10,7 @@ module.exports = {
       if (!key) 
         throw new Error('Please provide your TinyPNG API Key!')
 
-      fs.writeFile('.configure.json', JSON.stringify({ 'key': key }, 2, 2), (err) => {
+      fs.writeFile('/tmp/.configure-compress.json', JSON.stringify({ 'key': key }, 2, 2), (err) => {
         if (err) return console.log(err);
         console.log('\n', ' SUCCESS '.bgGreen, 'API Key successfully saved.', "\n")
       });
