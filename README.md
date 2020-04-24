@@ -7,6 +7,11 @@
 
 <hr>
 
+## 📟 Preview
+<img src="./demo.gif" alt="Demo - CompressCLI">
+<hr>
+
+
 ## ⚡ Install
 
 1. For Mac, Linux and Windows:
