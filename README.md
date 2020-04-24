@@ -42,6 +42,7 @@ Options:
   -f             The filename with the entire directory
   -d             The directory path with the files
 ```
+When the compression is finished, a "compressed" folder is created in the original file directory and the new compressed file will be saved on this page.
 
 ## 📝 License
 
